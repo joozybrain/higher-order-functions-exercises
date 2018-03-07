@@ -1,17 +1,23 @@
 function onlyEven(array) {
-  return array;
+  const evenArray = array.filter(element => element % 2 === 0);
+  return evenArray;
 }
 
 function onlyOneWord(array) {
-  return array;
+  const oneWordArray = array.filter(element => !element.includes(" "));
+  return oneWordArray;
 }
 
 function positiveRowsOnly(array) {
-  return array; //(hint: use Array.prototype.some())
+  const positiveArray = array.filter(
+    element => !element.some(negativeNum => negativeNum < 0)
+  );
+  return positiveArray; //(hint: use Array.prototype.some())
 }
 
 function truthyValuesOnly(array) {
-  return array;
+  const truthyArray = array.filter(element => element);
+  return truthyArray;
 }
 
 module.exports = {
