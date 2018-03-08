@@ -4,7 +4,6 @@ function multiplyBy10(array) {
 }
 
 function onlyVowels(array) {
-  var vowels = ["a", "e", "i", "o", "u"];
   return (array = array.map(element => splitWord(element)));
 }
 
@@ -15,11 +14,11 @@ function splitWord(word) {
 }
 
 function doubleMatrix(array) {
-  return array = array.map(element => element.map(ele => ele *2));
+  return (array = array.map(element => element.map(ele => ele * 2)));
 }
 
 function onlyNames(array) {
-  return array = array.map(element => element.name);
+  return (array = array.map(element => element.name));
 }
 
 module.exports = {
