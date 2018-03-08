@@ -10,6 +10,8 @@ function allEven(input) {
 function positiveMatrix(input) {
   const pos = input.every(element => element.every(numInArray => numInArray > 0));
   return pos;
+  // you can consider returning pos directly:
+  // return input.every(element => element.every(number => number > 0));
 }
 
 module.exports = {
